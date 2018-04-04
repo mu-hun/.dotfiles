@@ -1,0 +1,33 @@
+# Reference :
+# https://github.com/simnalamburt/.dotfiles/blob/master/.gitconfig.local
+# vim: ft=gitconfig noexpandtab sw=8
+
+# Cannot use TLS?
+# [url "git://"]
+#   insteadOf = https://
+
+# Want to use GCMW?
+# [credential]
+#   helper = manager
+
+# OS X credential cache
+# [credential]
+#   helper = osxkeychain
+
+# Want diff highlight?
+# [pager]
+#   log  = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
+#   show = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
+#   diff = /usr/share/git/diff-highlight/diff-highlight | less -+XF -SQc
+
+# Want diff highlight in macOS?
+# [pager]
+#   log  = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
+#   show = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
+#   diff = $(brew --prefix git)/share/git-core/contrib/diff-highlight/diff-highlight | less -+XF -SQc
+
+# Want to use cdiff as a difftool?
+# [diff]
+#   tool = cdiff
+# [difftool "cdiff"]
+#   cmd = cdiff -sw0
