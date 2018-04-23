@@ -1,0 +1,13 @@
+/* hide the native tabs */
+#TabsToolbar { visibility: collapse; }
+#titlebar { visibility: collapse; }
+
+/* hide the tree tabs header */
+#sidebar-header { visibility: collapse !important;}
+
+/* Option : eaves space for the MS windows buttons */
+/* #nav-bar {
+    margin-top: -8px;
+    margin-right: 74px;
+    margin-bottom: -4px;
+} */

@@ -1,0 +1,70 @@
+{
+  "BTTPresetName" : "Default",
+  "BTTPresetUUID" : "38F55F6A-03D0-48FD-A949-CA77889C8021",
+  "BTTPresetContent" : [
+    {
+      "BTTAppBundleIdentifier" : "BT.G",
+      "BTTAppName" : "Global",
+      "BTTAppSpecificSettings" : {
+
+      },
+      "BTTTriggers" : [
+        {
+          "BTTWidgetName" : "Spotify",
+          "BTTTriggerType" : 639,
+          "BTTTriggerTypeDescription" : "Apple Script Widget",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchBar",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTShortcutToSend" : "59,58,56,1",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 1,
+          "BTTKeySequence" : {
+
+          },
+          "BTTTriggerConfig" : {
+            "BTTTouchBarItemIconHeight" : 22,
+            "BTTTouchBarItemIconWidth" : 22,
+            "BTTTouchBarItemPadding" : 0,
+            "BTTTouchBarFreeSpaceAfterButton" : "5.000000",
+            "BTTTouchBarButtonColor" : "58.650001, 58.650001, 58.650001, 255.000000",
+            "BTTTouchBarAlwaysShowButton" : "1",
+            "BTTTouchBarAppleScriptString" : "tell application \"System Events\"\r\tset num to count (every process whose name is \"Spotify\")\rend tell\r\rif num > 0 then\r\ttell application \"Spotify\"\r\t\tset playState to (player state as text)\r\t\tif playState is equal to \"playing\" then\r\t\t\tset trackName to name of current track\r\t\t\tset artistName to artist of current track\r\t\t\tset albumName to album of current track\r\t\t\tset trackInfo to trackName & \" | \" & artistName & \" | \" & albumName\r\t\telse\r\t\t\tset trackInfo to \"Nothing playing\"\r\t\tend if\r\t\treturn trackInfo\r\tend tell\relse\r\tset trackInfo to \"Spotify not running\"\r\treturn trackInfo\rend if",
+            "BTTTouchBarAlternateBackgroundColor" : "109.650002, 109.650002, 109.650002, 255.000000",
+            "BTTTouchBarScriptUpdateInterval" : 5
+          }
+        },
+        {
+          "BTTWidgetWidth" : "E hh:mm a",
+          "BTTTriggerType" : 633,
+          "BTTTriggerTypeDescription" : "Date \/ Time Widget",
+          "BTTTriggerClass" : "BTTTriggerTypeTouchBar",
+          "BTTPredefinedActionType" : -1,
+          "BTTPredefinedActionName" : "No Action",
+          "BTTEnabled" : 1,
+          "BTTOrder" : 0,
+          "BTTTriggerConfig" : {
+            "BTTTouchBarItemIconHeight" : 22,
+            "BTTTouchBarItemIconWidth" : 22,
+            "BTTTouchBarItemPlacement" : 1,
+            "BTTTouchBarItemPadding" : 0,
+            "BTTTouchBarFreeSpaceAfterButton" : "5.000000",
+            "BTTTouchBarButtonColor" : "58.650001, 58.650001, 58.650001, 255.000000",
+            "BTTTouchBarAlwaysShowButton" : "1",
+            "BTTTouchBarAlternateBackgroundColor" : "0.000000, 0.000000, 0.000000, 0.000000"
+          }
+        }
+      ]
+    },
+    {
+      "BTTAppBundleIdentifier" : "com.apple.finder",
+      "BTTAppName" : "Finder",
+      "BTTTriggers" : [
+
+      ]
+    }
+  ],
+  "BTTPresetSnapAreas" : [
+
+  ]
+}
