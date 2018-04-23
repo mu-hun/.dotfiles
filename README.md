@@ -1,6 +1,6 @@
 # .dotfiles
 
-## Requires `git` and `fish`
+Requires `git` and `fish`
 
 ```bash
 git clone https://github.com/BetaF1sh/.dotfiles.git --depth=1 ~/.dotfiles
