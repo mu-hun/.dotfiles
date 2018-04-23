@@ -20,8 +20,5 @@ ln -sf .dotfiles/.gitexclude ~
 cp ~/.dotfiles/.gitconfig.local ~
 ```
 
-## package list
-- Macos
-
 --------
 *dotfiles* was inspired by [simnalamburt/.dotfiles](https://github.com/simnalamburt/.dotfiles).
