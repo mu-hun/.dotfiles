@@ -1,12 +1,14 @@
 # MacBook Pro setup methods
 
-## `brew`
+## [`brew`](https://brew.sh)
+
 - tmux
 - hub yarn neovim
 - python scrpy pandoc
 - node hugo
 
-## `brew cask`
+## [`brew cask`](https://caskroom.github.io/)
+
 - alfred iterm2 karabiner-elements keyboard-maestro bettertouchtool
 - atom visual-studio-code oni
 - google-chrome firefox vivaldi
@@ -22,4 +24,5 @@ only touch bar model..
 `../BTT.json` import
 
 ## KeyBoard Meestro
+
 `../Macros.kmmacros` import
