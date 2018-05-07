@@ -17,12 +17,6 @@
 - processing android-platform-tools
 - telegram-desktop discord keybase
 
-## Batter Touch Tool
-
-only touch bar model..
-
-`../BTT.json` import
-
 ## KeyBoard Meestro
 
 `../Macros.kmmacros` import
