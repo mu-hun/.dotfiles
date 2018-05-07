@@ -9,11 +9,11 @@
 
 ## [`brew cask`](https://caskroom.github.io/)
 
-- alfred iterm2 karabiner-elements keyboard-maestro bettertouchtool
+- alfred iterm2 karabiner-elements keyboard-maestro
 - atom visual-studio-code oni
 - google-chrome firefox vivaldi
 - minecraft steam
-- pdfexpert typora calibre
+- pdfexpert typora calibre muse
 - processing android-platform-tools
 - telegram-desktop discord keybase
 
