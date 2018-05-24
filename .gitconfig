@@ -3,7 +3,7 @@
 	email = iam@muhun.kim
 	signingKey = 8CDEB9CA
 [core]
-	editor = vim
+	editor = vi
 	pager = less -+XF -SQc
 	excludesfile = ~/.gitexclude
 	fscache = yes
