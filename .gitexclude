@@ -2,6 +2,7 @@
 npm-debug.log     # npm
 .byebug_history   # Ruby byebug
 *.pyc             # Python 2
+__pycache__       # Python cache
 .xmark.*.html     # Xmark
 
 #
@@ -10,7 +11,8 @@ npm-debug.log     # npm
 .DS_Store
 .AppleDouble
 .LSOverride
-Icon
+Icon
+
 ._*
 
 # Files that might appear on external disk
