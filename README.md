@@ -22,3 +22,5 @@ cp ~/.dotfiles/.gitconfig.local ~
 
 --------
 *dotfiles* was inspired by [simnalamburt/.dotfiles](https://github.com/simnalamburt/.dotfiles).
+
+*dotfiles* is primarily distributed under the terms of both the MIT license. See [LICENSE](./LICENSE) for details.
