@@ -3,8 +3,12 @@ npm-debug.log     # npm
 .byebug_history   # Ruby byebug
 *.pyc             # Python 2
 __pycache__       # Python cache
-*.egg-info/        # Python egg-info
+
+# Python packages
+*.egg-info
 dist
+build
+
 .xmark.*.html     # Xmark
 
 #
