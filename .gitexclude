@@ -9,6 +9,10 @@ __pycache__       # Python cache
 dist
 build
 
+# pipenv
+Pipfile
+Pipfile.lock
+
 .xmark.*.html     # Xmark
 
 #
