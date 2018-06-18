@@ -17,6 +17,14 @@
 - processing android-platform-tools
 - telegram-desktop discord keybase
 
-## KeyBoard Meestro
+## KeyBoard Maestro
 
 `../Macros.kmmacros` import
+
+## Login screen auto renewal
+
+```
+# sudo vi /usr/lib/cron/tabs/root
+30 */6 *** rm /Library/Caches/com.apple.desktop.admin.png
+```
+
