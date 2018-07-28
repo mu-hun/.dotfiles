@@ -2,7 +2,7 @@
 
 ## [`brew`](https://brew.sh)
 
-- tmux
+- tmux fzf
 - hub yarn neovim
 - python scrpy pandoc
 - node hugo
@@ -16,6 +16,10 @@
 - pdfexpert typora calibre muse
 - processing android-platform-tools
 - telegram-desktop discord keybase
+
+## `eazy_install`
+
+- trash-cli
 
 ## KeyBoard Maestro
 
