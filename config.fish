@@ -100,3 +100,8 @@ if __available hub; alias git='hub'; end
 
 # pip3
 if __available pip3; alias pip='pip3'; end
+
+# lldb-mi
+if __available lldb
+  __path "/Applications/Xcode.app/Contents/Developer/usr/bin/"
+end
