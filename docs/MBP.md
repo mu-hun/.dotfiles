@@ -31,4 +31,3 @@
 # sudo vi /usr/lib/cron/tabs/root
 30 */6 *** rm /Library/Caches/com.apple.desktop.admin.png
 ```
-
