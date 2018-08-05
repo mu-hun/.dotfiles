@@ -25,9 +25,14 @@
 
 `../Macros.kmmacros` import
 
-## Login screen auto renewal
+## `crontab`
 
-```
-# sudo vi /usr/lib/cron/tabs/root
-30 */6 *** rm /Library/Caches/com.apple.desktop.admin.png
-```
+### `sudo vi /usr/lib/cron/tabs/root`
+
+`30 */6 *** rm /Library/Caches/com.apple.desktop.admin.png`
+
+### `crontab -e`
+
+> Temporary file error occurring in nvim use `env EDITOR=vim crontab -e` instead of `crontab -e`
+
+`0 9-23/3 * * * cd ~/github/BetaFish/commit-telegram-bot/ && pipenv run python index.py`
