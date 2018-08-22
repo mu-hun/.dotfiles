@@ -9,7 +9,7 @@
 
 ## [`brew cask`](https://caskroom.github.io/)
 
-- alfred iterm2 karabiner-elements keyboard-maestro
+- alfred iterm2 karabiner-elements
 - atom visual-studio-code oni
 - google-chrome firefox vivaldi
 - minecraft steam
@@ -21,10 +21,6 @@
 
 - trash-cli
 
-## KeyBoard Maestro
-
-`../Macros.kmmacros` import
-
 ## `crontab`
 
 ### `sudo vi /usr/lib/cron/tabs/root`
@@ -34,5 +30,3 @@
 ### `crontab -e`
 
 > Temporary file error occurring in nvim use `env EDITOR=vim crontab -e` instead of `crontab -e`
-
-`0 9-23/3 * * * cd ~/github/BetaFish/commit-telegram-bot/ && pipenv run python index.py`
