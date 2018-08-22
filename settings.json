@@ -1,0 +1,25 @@
+{
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false,
+    "editor.fontFamily": "Fira Code",
+	"window.zoomLevel": 0,
+    "files.autoSave": "afterDelay",
+    "files.autoSaveDelay": 100,
+    "editor.wordWrap": "on",
+    "editor.minimap.enabled": false,
+    "workbench.activityBar.visible": true,
+    "workbench.statusBar.visible": true,
+    "terminal.external.osxExec": "iterm.app",
+    "emmet.includeLanguages": {
+        "html": "html",
+        "erb": "erb",
+        "javascrpit": "js",
+        "vue": "html"
+    },
+    "typescript.validate.enable": false,
+    "files.insertFinalNewline": true,
+    "html.format.endWithNewline": true,
+	"editor.detectIndentation": true,
+    "editor.insertSpaces": false
+    /*tslint:disabled*/
+}
