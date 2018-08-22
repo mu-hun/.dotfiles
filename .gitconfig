@@ -49,3 +49,5 @@
 	program = /usr/local/MacGPG2/bin/gpg2
 [hub]
 	protocol = https
+[pull]
+	rebase = true
