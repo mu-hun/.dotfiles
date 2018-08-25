@@ -2,7 +2,7 @@
 
 ## [`brew`](https://brew.sh)
 
-- tmux fzf
+- tmux fzf shpotify
 - hub yarn neovim
 - python scrpy pandoc
 - node hugo
