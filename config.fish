@@ -67,8 +67,8 @@ if __available nvim
 end
 
 # Golang
-if __available go; and [ -d "$HOME/.go" ]
-  set -x GOPATH "$HOME/.go"
+if __available go; and [ -d "$HOME/go" ]
+  set -x GOPATH "$HOME/go"
   __path "$GOPATH/bin"
 end
 
