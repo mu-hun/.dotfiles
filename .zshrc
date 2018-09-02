@@ -140,6 +140,11 @@ if (( $+commands[processing-java] )); then
 	export PROCESSING_JAVA="/usr/local/bin/processing-java"
 fi
 
+# thefuck
+if (( $+commands[thefuck] )); then
+	eval $(thefuck --alias)
+fi
+
 #
 # pure
 #
