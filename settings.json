@@ -20,6 +20,6 @@
     "files.insertFinalNewline": true,
     "html.format.endWithNewline": true,
 	"editor.detectIndentation": true,
-    "editor.insertSpaces": false
-    /*tslint:disabled*/
+    "editor.insertSpaces": false,
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh"
 }

@@ -1,5 +1,9 @@
 # NodeJS setup methods
 
+## `npm`
+
+- pure-prompt
+
 ## `yarn`
 
 - ijavascript
