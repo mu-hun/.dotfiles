@@ -145,6 +145,17 @@ if (( $+commands[thefuck] )); then
 	eval $(thefuck --alias)
 fi
 
+if (( $+commands[fzf] )); then
+	function fzfpw() {
+		fzf --preview '[[ $(file --mime {}) =~ binary ]] &&
+		echo  {} is a binary file ||
+		(highlight -O ansi -l {} ||
+		coderay {} ||
+		rougify {} ||
+		cat {}) 2> /dev/null | head -500'
+	}
+fi
+
 #
 # pure
 #
