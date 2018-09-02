@@ -16,10 +16,6 @@ ln -sf .dotfiles/.vimrc ~
 ln -sf .dotfiles/.gitconfig ~
 ln -sf .dotfiles/.gitexclude ~
 
-# vscode
-
-ln -sf ~/.dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json
-
 # Optional dotfiles
 cp ~/.dotfiles/.gitconfig.local ~
 ```
