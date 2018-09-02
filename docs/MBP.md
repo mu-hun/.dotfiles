@@ -1,8 +1,12 @@
 # MacBook Pro setup methods
 
+## remove the "last login" message
+
+`touch ~/.huslogin`
+
 ## [`brew`](https://brew.sh)
 
-- tmux fzf shpotify
+- tmux fzf shpotify fasd neofetch
 - hub yarn neovim
 - python scrpy pandoc
 - node hugo
@@ -16,6 +20,10 @@
 - pdfexpert typora calibre muse
 - processing android-platform-tools
 - telegram-desktop discord keybase
+
+# vscode
+
+ln -sf ~/.dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json
 
 ## `eazy_install`
 

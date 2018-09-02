@@ -88,6 +88,12 @@ export LANG=en_US.UTF-8
 if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
 if [[ "$TMUX" = "" ]]; then export TERM="xterm-256color"; fi
 
+# zsh plugins
+plugins=(
+	git
+	fasd
+)
+
 # ~/.local/bin
 if [[ -d ~/.local/bin ]]; then
 	export PATH="$HOME/.local/bin:$PATH"
