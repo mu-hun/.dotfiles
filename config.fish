@@ -6,33 +6,33 @@ set fish_greeting ""
 if not status --is-interactive; exit; end
 
 function __path
-  switch (count $argv)
-  case 1
-    if perl -e "exit(!(grep(m{^$argv[1]\$},split(':', \$ENV{PATH}))) > 0)"; return; end
+switch (count $argv)
+	case 1
+		if perl -e "exit(!(grep(m{^$argv[1]\$},split(':', \$ENV{PATH}))) > 0)"; return; end
 
-    # Append to $PATH
-    set PATH $PATH "$argv[1]" ^/dev/null
-  case 2
-    if perl -e "exit(!(grep(m{^$argv[1]\$},split(':', \$ENV{PATH}))) > 0)"; return; end
-    if [ "$argv[2]" != "--force" ]; return 1; end
+	# Append to $PATH
+	set PATH $PATH "$argv[1]" ^/dev/null
+	case 2
+	if perl -e "exit(!(grep(m{^$argv[1]\$},split(':', \$ENV{PATH}))) > 0)"; return; end
+	if [ "$argv[2]" != "--force" ]; return 1; end
 
-    # Prepend to $PATH
-    set PATH "$argv[1]" $PATH ^/dev/null
-  case '*'
-    return 1
-  end
+	# Prepend to $PATH
+	set PATH "$argv[1]" $PATH ^/dev/null
+	case '*'
+	return 1
+	end
 end
 
 if printf '%s\n' '2.2.0' $FISH_VERSION | sort --check=silent --version-sort
-  # Current version ≥ 2.2.0
-  function __available -a name
-    command -v "$name" ^/dev/null >&2
-  end
+	# Current version ≥ 2.2.0
+	function __available -a name
+	command -v "$name" ^/dev/null >&2
+	end
 else
-  # Current version < 2.2.0
-  function __available -a name
-    type "$name" ^/dev/null >&2
-  end
+	# Current version < 2.2.0
+	function __available -a name
+	type "$name" ^/dev/null >&2
+	end
 end
 
 
@@ -54,7 +54,7 @@ set -x LANGUAGE en_US.UTF-8
 
 # ~/.local/bin
 if [ -d ~/.local/bin ]
-  __path "$HOME/.local/bin" --force
+	__path "$HOME/.local/bin" --force
 end
 
 # Aliases
@@ -62,29 +62,29 @@ if __available tmux; alias irc='tmux attach -t irc'; end
 
 # Neovim
 if __available nvim
-  set -x EDITOR nvim
-  alias vi='nvim'
+	set -x EDITOR nvim
+	alias vi='nvim'
 end
 
 # Golang
 if __available go; and [ -d "$HOME/go" ]
-  set -x GOPATH "$HOME/go"
-  __path "$GOPATH/bin"
+	set -x GOPATH "$HOME/go"
+	__path "$GOPATH/bin"
 end
 
 # Ruby
 if __available ruby; and __available gem
-  set -x GEM_HOME (ruby -e 'print Gem.user_dir')
-  __path "$GEM_HOME/bin"
+	set -x GEM_HOME (ruby -e 'print Gem.user_dir')
+	__path "$GEM_HOME/bin"
 end
 
 # cargo install
 if [ -d ~/.cargo/bin ]
-  __path "$HOME/.cargo/bin"
+	__path "$HOME/.cargo/bin"
 end
 # yarn global
 if __available yarn
-  __path "$HOME/.config/yarn/global/node_modules/.bin"
+	__path "$HOME/.config/yarn/global/node_modules/.bin"
 end
 
 # chips <https://github.com/xtendo-org/chips>
@@ -92,7 +92,7 @@ end
 
 # calysto_processing
 if __available processing-java
-  set -x PROCESSING_JAVA /usr/local/bin/processing-java
+	set -x PROCESSING_JAVA /usr/local/bin/processing-java
 end
 
 # Referance : hub.github.com
@@ -103,5 +103,5 @@ if __available pip3; alias pip='pip3'; end
 
 # lldb-mi
 if __available lldb
-  __path "/Applications/Xcode.app/Contents/Developer/usr/bin/"
+	__path "/Applications/Xcode.app/Contents/Developer/usr/bin/"
 end
