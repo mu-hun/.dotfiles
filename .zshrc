@@ -99,6 +99,12 @@ if [[ -d ~/.local/bin ]]; then
 	export PATH="$HOME/.local/bin:$PATH"
 fi
 
+# iTerm2
+
+if [[ -f ~/.iterm2_shell_integration.zsh ]] then
+	source ~/.iterm2_shell_integration.zsh
+fi
+
 # Neovim
 if (( $+commands[nvim] )); then
 	export EDITOR=nvim
