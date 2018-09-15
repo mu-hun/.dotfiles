@@ -92,6 +92,7 @@ if [[ "$TMUX" = "" ]]; then export TERM="xterm-256color"; fi
 plugins=(
 	git
 	fasd
+	tmux
 )
 
 # ~/.local/bin
