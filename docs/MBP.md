@@ -17,7 +17,7 @@
 - atom visual-studio-code oni
 - google-chrome firefox vivaldi
 - minecraft steam
-- pdfexpert typora calibre muse
+- pdfexpert typora muse microsoft-office
 - processing android-platform-tools
 - telegram-desktop discord keybase
 
