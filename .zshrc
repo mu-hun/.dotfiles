@@ -139,7 +139,7 @@ if (( $+commands[yarn] )); then
 fi
 
 # hub
-if (( $+commands[hun] )); then
+if (( $+commands[hub] )); then
 	alias git='hub'
 fi
 

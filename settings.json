@@ -1,7 +1,7 @@
 {
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
-    "editor.fontFamily": "Fira Code",
+    "editor.fontFamily": "FuraCode Nerd Font",
 	"window.zoomLevel": 0,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 100,
@@ -21,5 +21,11 @@
     "html.format.endWithNewline": true,
 	"editor.detectIndentation": true,
     "editor.insertSpaces": false,
-    "terminal.integrated.shell.osx": "/usr/local/bin/zsh"
+    "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
+    "vetur.validation.template": false,
+    "javascript.validate.enable": false,
+    "editor.fontWeight": "500",
+    "files.exclude": {
+        "**/__pycache__": true
+    }
 }
