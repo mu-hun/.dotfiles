@@ -7,7 +7,7 @@ __pycache__       # Python cache
 # Python packages
 *.egg-info
 dist
-build
+#build
 
 # pipenv
 Pipfile
