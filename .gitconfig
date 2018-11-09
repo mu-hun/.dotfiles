@@ -25,6 +25,7 @@
 	autosetuprebase = always
 [push]
 	default = simple
+	followTags = true
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
