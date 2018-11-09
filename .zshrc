@@ -81,6 +81,7 @@ fi
 
 # language environment
 export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8
 
 #
 # zshrc
@@ -150,6 +151,11 @@ fi
 # thefuck
 if (( $+commands[thefuck] )); then
 	eval $(thefuck --alias)
+fi
+
+# pip3
+if (( $+commands[pip3] )); then
+	alias pip='pip3'
 fi
 
 if (( $+commands[fzf] )); then
@@ -226,3 +232,14 @@ fi
 #
 autoload -U promptinit; promptinit
 prompt pure
+export PATH="/usr/local/sbin:$PATH"
+
+# added by travis gem
+[ -f /Users/muhun/.travis/travis.sh ] && source /Users/muhun/.travis/travis.sh
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/muhun/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/muhun/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/muhun/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/muhun/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
