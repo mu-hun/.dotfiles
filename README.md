@@ -1,4 +1,10 @@
-# .dotfiles
+<p align=center>
+  <a href="https://github.com/BetaF1sh">
+    <img alt="dotfiles" src="./logo.svg">
+  </a>
+  <br>
+  <a href="docs/FireFox.md">FireFox</a> | <a href="docs/MBP.md">MacOS</a>
+</p>
 
 Requires `git` and `zsh`
 
