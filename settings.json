@@ -2,6 +2,7 @@
     "explorer.confirmDragAndDrop": false,
     "explorer.confirmDelete": false,
     "editor.fontFamily": "FuraCode Nerd Font",
+    "editor.fontLigatures": true,
 	"window.zoomLevel": 0,
     "files.autoSave": "afterDelay",
     "files.autoSaveDelay": 100,
@@ -19,7 +20,7 @@
     "typescript.validate.enable": false,
     "files.insertFinalNewline": true,
     "html.format.endWithNewline": true,
-	"editor.detectIndentation": true,
+	"editor.detectIndentation": false,
     "editor.insertSpaces": false,
     "terminal.integrated.shell.osx": "/usr/local/bin/zsh",
     "vetur.validation.template": false,
@@ -27,5 +28,7 @@
     "editor.fontWeight": "500",
     "files.exclude": {
         "**/__pycache__": true
-    }
+    },
+	"editor.formatOnSave": true,
+	"editor.tabSize": 4
 }
