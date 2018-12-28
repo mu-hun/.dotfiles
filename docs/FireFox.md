@@ -3,12 +3,20 @@
 ## Add-ons
 
 - Bitly
-- Dark Mode
 - Facebook Container
 - HTTPS Everywhere
 - Tree Tabs
-- Vim Vixen
-- Adblock Plus
+- uBlock Origin
+- [elearn](https://github.com/BetaF1sh/elearn)
+- github-file-icon
+- Finnd Korea from Dropdowns
+- Greasemonkey
+- Netflix 1080p
+- OctoLenses
+- Octotree
+- Privacy Badger
+- Vue.js devtools
+- Wappalyzer
 
 ## [TreeTabs](https://addons.mozilla.org/en-US/firefox/addon/tree-tabs/) 사용하기 : Firefox 상단 탭 제거
 
