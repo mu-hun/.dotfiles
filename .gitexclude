@@ -61,3 +61,5 @@ Session.vim
 .vscode
 
 node_modules
+
+build
