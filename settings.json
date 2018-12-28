@@ -30,5 +30,6 @@
         "**/__pycache__": true
     },
 	"editor.formatOnSave": true,
-	"editor.tabSize": 4
+	"editor.tabSize": 4,
+	"workbench.editor.showTabs": false
 }

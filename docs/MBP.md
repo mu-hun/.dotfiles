@@ -23,7 +23,7 @@
 
 # vscode
 
-ln -sf ~/.dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json
+`ln -sf ~/.dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json`
 
 ## `eazy_install`
 
