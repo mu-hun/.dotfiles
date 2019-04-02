@@ -15,6 +15,9 @@ Pipfile.lock
 __pycache__
 .xmark.*.html     # Xmark
 
+# pytest
+.pytest_cache
+
 #
 # OS X
 #
