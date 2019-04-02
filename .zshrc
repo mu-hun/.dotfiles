@@ -94,6 +94,7 @@ plugins=(
 	git
 	fasd
 	tmux
+	zsh-iterm-touchbar
 )
 
 # ~/.local/bin
@@ -236,6 +237,8 @@ export PATH="/usr/local/sbin:$PATH"
 
 # added by travis gem
 [ -f /Users/muhun/.travis/travis.sh ] && source /Users/muhun/.travis/travis.sh
+
+#source $HOME/.bashrc
 
 # tabtab source for serverless package
 # uninstall by removing these lines or running `tabtab uninstall serverless`
