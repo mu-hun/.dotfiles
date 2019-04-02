@@ -1,7 +1,7 @@
 [user]
 	name = Muhun Kim
 	email = iam@muhun.kim
-	signingKey = 8CDEB9CA
+	signingkey = 24CAE390A517A856BB8B284C971AAC027BA756CD
 [core]
 	editor = vi
 	pager = less -+XF -SQc
@@ -52,3 +52,5 @@
 	protocol = https
 [pull]
 	rebase = true
+[credential]
+	helper = osxkeychain
