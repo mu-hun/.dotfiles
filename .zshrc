@@ -170,6 +170,11 @@ if (( $+commands[fzf] )); then
 	}
 fi
 
+# npx
+if (( $+commands[npx] )); then
+	alias npm='npx npm'
+fi
+
 if (( $+commands[fzf-tmux] )); then
 	# fe [FUZZY PATTERN] - Open the selected file with the default editor
 	#   - Bypass fuzzy finder if there's only one match (--select-1)
@@ -246,3 +251,8 @@ export PATH="/usr/local/sbin:$PATH"
 # tabtab source for sls package
 # uninstall by removing these lines or running `tabtab uninstall sls`
 [[ -f /Users/muhun/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/muhun/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+# The next line updates PATH for the Google Cloud SDK.
+if [ -f '/Users/muhun/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/muhun/Downloads/google-cloud-sdk/path.zsh.inc'; fi
+
+# The next line enables shell command completion for gcloud.
+if [ -f '/Users/muhun/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/muhun/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
