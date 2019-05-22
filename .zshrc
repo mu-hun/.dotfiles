@@ -256,3 +256,14 @@ if [ -f '/Users/muhun/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users
 
 # The next line enables shell command completion for gcloud.
 if [ -f '/Users/muhun/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/muhun/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
+
+# android
+if (( $+commands[adb] )); then
+	export JAVA_HOME=`/usr/libexec/java_home -v 1.8`
+
+	export ANDROID_HOME=$HOME/Library/Android/sdk
+	export PATH=$PATH:$ANDROID_HOME/emulator
+	export PATH=$PATH:$ANDROID_HOME/tools
+	export PATH=$PATH:$ANDROID_HOME/tools/bin
+	export PATH=$PATH:$ANDROID_HOME/platform-tools
+fi
