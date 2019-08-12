@@ -70,4 +70,35 @@
 	"javascript.updateImportsOnFileMove.enabled": "always",
 	"git.autofetch": true,
 	"editor.multiCursorModifier": "ctrlCmd",
+	"prettier.trailingComma": "es5",
+	"prettier.useTabs": false,
+	"prettier.singleQuote": true,
+	"prettier.jsxSingleQuote": true,
+	"prettier.jsxBracketSameLine": true,
+	"markdown-preview-enhanced.codeBlockTheme": "github.css",
+	"markdown-preview-enhanced.previewTheme": "atom-dark.css",
+	"sync.gist": "8a623dc83259ef71f0d67dad906cf88f",
+	"[typescript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[typescriptreact]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[scss]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[javascript]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[jsonc]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"[html]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	},
+	"prettier.semi": false,
+	"typescript.updateImportsOnFileMove.enabled": "always",
+	"[json]": {
+		"editor.defaultFormatter": "esbenp.prettier-vscode"
+	}
 }
