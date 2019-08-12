@@ -14,16 +14,12 @@
 ## [`brew cask`](https://caskroom.github.io/)
 
 - alfred iterm2 karabiner-elements
-- atom visual-studio-code oni
+- visual-studio-code
 - google-chrome firefox vivaldi
 - minecraft steam
-- pdfexpert typora muse microsoft-office
-- processing android-platform-tools
-- telegram-desktop discord keybase
-
-#@ vscode
-
-`ln -sf ~/.dotfiles/settings.json ~/Library/Application\ Support/Code/User/settings.json`
+- pdfexpert typora muse
+- android-platform-tools
+- telegram-desktop discord
 
 ## `eazy_install`
 
