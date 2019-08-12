@@ -23,3 +23,9 @@
 [프로파일 경로](https://support.mozilla.org/en-US/kb/profiles-where-firefox-stores-user-data#w_how-do-i-find-my-profile) 찾은 뒤
 
 `mkdir -p ~/Library/Application Support/Firefox/Profiles/<프로파일 이름>/chrome; cp ~/.dotfiles/userChrome.css ~/Library/Application Support/Firefox/Profiles/<프로파일 이름>/chrome/userChrome.css`
+
+## uBlock Origin
+
+```
+dreamy.jejunu.ac.kr###topImg
+```
