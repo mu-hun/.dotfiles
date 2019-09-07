@@ -137,7 +137,7 @@ fi
 
 # yarn global
 if (( $+commands[yarn] )); then
-	export PATH="$PATH:$HOME/.config/yarn/global/node_modules/.bin"
+	export PATH="$(yarn global bin):$PATH"	
 fi
 
 # hub
