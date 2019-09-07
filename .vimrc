@@ -69,3 +69,5 @@ if &modifiable
 	endif
 endfunction
 nnoremap <CR> :call CustomEnter()<CR>
+
+autocmd Filetype gitcommit setlocal spell textwidth=72
