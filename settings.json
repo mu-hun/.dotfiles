@@ -100,5 +100,7 @@
 	"typescript.updateImportsOnFileMove.enabled": "always",
 	"[json]": {
 		"editor.defaultFormatter": "esbenp.prettier-vscode"
-	}
+	},
+	"eslint.autoFixOnSave": true,
+	"editor.formatOnPaste": true
 }
