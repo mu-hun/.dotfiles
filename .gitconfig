@@ -1,7 +1,7 @@
 [user]
 	name = Muhun Kim
 	email = iam@muhun.kim
-	signingkey = 24CAE390A517A856BB8B284C971AAC027BA756CD
+	signingkey = 1AA19290CB9EC2328ED71C77C0A07EE563A6F440
 [core]
 	editor = vi
 	pager = less -+XF -SQc
@@ -54,3 +54,7 @@
 	rebase = true
 [credential]
 	helper = osxkeychain
+[tag]
+	forceSignAnnotated = true
+[alias]
+	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold red)%h%C(reset) : %C(bold green)(%ar)%C(reset) - %C(cyan)<%an>%C(reset)%C(bold yellow)%d%C(reset)%n%n%w(90,1,2)%C(white)%B%C(reset)%n'
