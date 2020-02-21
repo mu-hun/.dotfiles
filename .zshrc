@@ -143,6 +143,7 @@ fi
 # hub
 if (( $+commands[hub] )); then
 	alias git='hub'
+    alias gw="hub switch"
 fi
 
 if (( $+commands[processing-java] )); then
