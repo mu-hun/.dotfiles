@@ -30,7 +30,7 @@
 	tool = vimdiff
 	conflictstyle = diff3
 [credential "https://github.com"]
-	username = BetaF1sh
+	username = x86chi
 [filter "lfs"]
 	required = yes
 	clean = git-lfs clean -- %f
