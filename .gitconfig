@@ -49,7 +49,7 @@
 [gpg]
 	program = /usr/local/MacGPG2/bin/gpg2
 [hub]
-	protocol = https
+	protocol = ssh
 [pull]
 	rebase = true
 [credential]
