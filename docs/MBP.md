@@ -17,7 +17,7 @@
 - visual-studio-code
 - google-chrome firefox vivaldi
 - minecraft steam
-- pdfexpert typora muse
+- pdf-expert typora muse
 - android-platform-tools
 - telegram-desktop discord
 
