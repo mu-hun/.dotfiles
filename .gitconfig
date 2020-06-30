@@ -1,7 +1,7 @@
 [user]
 	name = Muhun Kim
 	email = iam@muhun.kim
-	signingkey = 1AA19290CB9EC2328ED71C77C0A07EE563A6F440
+	signingkey = 3258211671E1404B
 [core]
 	editor = vi
 	pager = less -+XF -SQc
