@@ -22,7 +22,6 @@
 	"html.format.endWithNewline": true,
 	"editor.detectIndentation": false,
 	"editor.insertSpaces": false,
-	"terminal.integrated.shell.osx": "/usr/local/bin/zsh",
 	"vetur.validation.template": false,
 	"javascript.validate.enable": false,
 	"editor.fontWeight": "500",
