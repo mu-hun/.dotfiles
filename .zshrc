@@ -144,7 +144,6 @@ fi
 # hub
 if (( $+commands[hub] )); then
 	alias git='hub'
-    alias gw="hub switch"
 fi
 
 if (( $+commands[processing-java] )); then
@@ -241,23 +240,6 @@ fi
 autoload -U promptinit; promptinit
 prompt pure
 export PATH="/usr/local/sbin:$PATH"
-
-# added by travis gem
-[ -f /Users/muhun/.travis/travis.sh ] && source /Users/muhun/.travis/travis.sh
-
-#source $HOME/.bashrc
-
-# tabtab source for serverless package
-# uninstall by removing these lines or running `tabtab uninstall serverless`
-[[ -f /Users/muhun/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/muhun/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
-# tabtab source for sls package
-# uninstall by removing these lines or running `tabtab uninstall sls`
-[[ -f /Users/muhun/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/muhun/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
-# The next line updates PATH for the Google Cloud SDK.
-if [ -f '/Users/muhun/Downloads/google-cloud-sdk/path.zsh.inc' ]; then . '/Users/muhun/Downloads/google-cloud-sdk/path.zsh.inc'; fi
-
-# The next line enables shell command completion for gcloud.
-if [ -f '/Users/muhun/Downloads/google-cloud-sdk/completion.zsh.inc' ]; then . '/Users/muhun/Downloads/google-cloud-sdk/completion.zsh.inc'; fi
 
 # android
 if (( $+commands[adb] )); then
