@@ -17,6 +17,10 @@ if [[ -f ~/.zplug/init.zsh ]]; then
 	zplug "mafredri/zsh-async"
 	
 	zplug "simnalamburt/cgitc"
+
+	zplug "iam4x/zsh-iterm-touchbar"
+
+	zplug "agkozak/zsh-z"
 	
 	zplug load
 else
@@ -92,9 +96,6 @@ if [[ "$TMUX" = "" ]]; then export TERM="xterm-256color"; fi
 # zsh plugins
 plugins=(
 	git
-	fasd
-	tmux
-	zsh-iterm-touchbar
 )
 
 # ~/.local/bin
