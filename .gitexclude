@@ -66,3 +66,6 @@ Session.vim
 node_modules
 
 build
+
+# yarn 2
+.yarn
