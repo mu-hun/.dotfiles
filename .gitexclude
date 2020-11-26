@@ -3,6 +3,7 @@ npm-debug.log     # npm
 .byebug_history   # Ruby byebug
 *.pyc             # Python 2
 __pycache__       # Python cache
+_cacache
 
 # Python packages
 *.egg-info
@@ -62,6 +63,7 @@ Session.vim
 
 # vscode
 .vscode
+anonymous-cli-metrics.json
 
 node_modules
 
