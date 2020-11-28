@@ -4,6 +4,7 @@ npm-debug.log     # npm
 *.pyc             # Python 2
 __pycache__       # Python cache
 _cacache
+_logs             # pnpm
 
 # Python packages
 *.egg-info
