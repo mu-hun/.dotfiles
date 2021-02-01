@@ -115,5 +115,8 @@
   "materialTheme.accent": "Blue",
   "workbench.startupEditor": "welcomePage",
   "python.showStartPage": false,
-  "editor.suggest.showStatusBar": true
+  "editor.suggest.showStatusBar": true,
+  "workbench.preferredDarkColorTheme": "Community Material Theme Darker High Contrast",
+  "workbench.preferredHighContrastColorTheme": "Community Material Theme Darker High Contrast",
+  "workbench.preferredLightColorTheme": "Quiet Light"
 }
