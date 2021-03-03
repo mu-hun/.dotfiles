@@ -129,6 +129,7 @@ if (( $+commands[go] )) && [[ -d ~/go ]]; then
 	export PATH="$PATH:$GOPATH/bin"
 fi
 
+
 # Ruby
 if (( $+commands[ruby] )) && (( $+commands[gem] )); then
 	GEM_HOME=$(ruby -e 'print Gem.user_dir')
@@ -240,3 +241,8 @@ fi
 autoload -U promptinit; promptinit
 prompt pure
 export PATH="/usr/local/sbin:$PATH"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
