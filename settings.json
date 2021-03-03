@@ -118,5 +118,5 @@
   "editor.suggest.showStatusBar": true,
   "workbench.preferredDarkColorTheme": "Community Material Theme Darker High Contrast",
   "workbench.preferredHighContrastColorTheme": "Community Material Theme Darker High Contrast",
-  "workbench.preferredLightColorTheme": "Quiet Light"
+"workbench.preferredLightColorTheme": "Quiet Light"
 }
