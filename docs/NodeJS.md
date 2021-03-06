@@ -1,11 +1,8 @@
-# NodeJS setup methods
+# Install global NodeJS package
 
-## `npm`
+```
+npm -g i pnpm
+pnpm -g i pure-prompt git-user-switch
+```
 
-- pure-prompt
-
-## `yarn`
-
-- ijavascript
-- webpack webpack-cli
-- vtop
+Use [Git User Switch](https://www.npmjs.com/package/git-user-switch) for signing commit.
