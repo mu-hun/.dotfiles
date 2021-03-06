@@ -12,8 +12,6 @@ dist
 #build
 
 # pipenv
-Pipfile
-Pipfile.lock
 __pycache__
 .xmark.*.html     # Xmark
 
