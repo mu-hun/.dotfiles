@@ -25,6 +25,13 @@ zplug install
 # Optional dotfiles
 cp ~/.dotfiles/.gitconfig.local ~
 
+# vim-plug
+
+type below command to neovim:
+:call mkdir(stdpath('config'), 'p')
+
+ln -sf ~/.dotfiles/init.vim ~/.config/nvim
+
 # apply vscode configuare
 ln -sf ~/.dotfiles/settings.json [path]
 
