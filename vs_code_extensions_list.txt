@@ -311,7 +311,6 @@ dzhavat.css-flexbox-cheatsheet
 ecmel.vscode-html-css
 EditorConfig.EditorConfig
 eg2.vscode-npm-script
-Equinusocio.vsc-community-material-theme
 Equinusocio.vsc-material-theme
 equinusocio.vsc-material-theme-icons
 esbenp.prettier-vscode
