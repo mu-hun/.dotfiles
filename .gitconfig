@@ -1,6 +1,7 @@
 [user]
 	name = Muhun Kim
 	email = iam@muhun.kim
+	signingkey = 2DE3A542
 [core]
 	editor = nvim
 	pager = less -+XF -SQc
