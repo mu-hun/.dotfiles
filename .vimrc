@@ -71,3 +71,8 @@ endfunction
 nnoremap <CR> :call CustomEnter()<CR>
 
 autocmd Filetype gitcommit setlocal spell textwidth=72
+
+" Easy file save without switching IME
+cabbrev ㅈ w
+cabbrev ㅂ q
+cabbrev ㅈㅂ wq
