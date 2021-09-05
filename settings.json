@@ -8,6 +8,7 @@
   "files.autoSaveDelay": 100,
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
+  "editor.bracketPairColorization.enabled": true,
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
   "terminal.external.osxExec": "iterm.app",

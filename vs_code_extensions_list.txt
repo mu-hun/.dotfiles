@@ -11,7 +11,6 @@ ashhitch.vs-code-css-comments
 blairleduc.touch-bar-display
 budparr.language-hugo-vscode
 bungcip.better-toml
-CoenraadS.bracket-pair-colorizer
 cssho.vscode-svgviewer
 DavidAnson.vscode-markdownlint
 dbaeumer.vscode-eslint
