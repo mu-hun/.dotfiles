@@ -10,6 +10,10 @@
 	autocrlf = no
 	quotepath = no
 	precomposeunicode = yes
+
+[init]
+	defaultBranch = main
+
 [log]
 	date = iso8601
 [color]
