@@ -1,6 +1,5 @@
 set encoding=utf-8
 set fileencoding=utf-8
-set shell=/bin/bash " http://stackoverflow.com/a/12231417
 set diffopt+=iwhite,vertical
 set pastetoggle=<F8>
 set scrolloff=3
