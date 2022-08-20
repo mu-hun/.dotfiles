@@ -1,7 +1,7 @@
 {
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "editor.fontFamily": "FuraCode Nerd Font",
+  "editor.fontFamily": "Fira Code",
   "editor.fontLigatures": true,
   "window.zoomLevel": 3,
   "files.autoSave": "onWindowChange",
