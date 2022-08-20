@@ -62,7 +62,11 @@
   },
   "material-icon-theme.activeIconPack": "react",
   "[markdown]": {
-    "editor.quickSuggestions": true,
+    "editor.quickSuggestions": {
+      "comments": "on",
+      "strings": "on",
+      "other": "on"
+    },
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "terminal.integrated.rendererType": "dom",
@@ -105,19 +109,21 @@
   "[json]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
-  "eslint.autoFixOnSave": true,
   "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": true
   },
   "python.languageServer": "Pylance",
-  "cSpell.userWords": ["mobx"],
-  "diffEditor.ignoreTrimWhitespace": false,
   "materialTheme.accent": "Blue",
   "workbench.startupEditor": "welcomePage",
-  "python.showStartPage": false,
   "editor.suggest.showStatusBar": true,
-  "workbench.preferredDarkColorTheme": "Community Material Theme Darker High Contrast",
-  "workbench.preferredHighContrastColorTheme": "Community Material Theme Darker High Contrast",
-"workbench.preferredLightColorTheme": "Quiet Light"
+  "workbench.preferredDarkColorTheme": "Material Theme High Contrast",
+  "workbench.preferredHighContrastColorTheme": "Material Theme High Contrast",
+  "workbench.preferredLightColorTheme": "Material Theme Lighter High Contrast",
+  "[javascriptreact]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "markdown-pdf.headerTemplate": "<div style=\"font-size: 9px; margin-left: 1cm; display: none\"> <span class='title'></span></div> <div style=\"font-size: 9px; margin-left: auto; margin-right: 1cm; display: none\"> <span class='date'></span></div>",
+  "redhat.telemetry.enabled": false,
+  "diffEditor.ignoreTrimWhitespace": false
 }
