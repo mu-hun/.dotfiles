@@ -21,6 +21,8 @@ if [[ -f ~/.zplug/init.zsh ]]; then
 	zplug "iam4x/zsh-iterm-touchbar"
 
 	zplug "agkozak/zsh-z"
+
+	zplug "paulirish/git-open", as:plugin
 	
 	zplug load
 else
@@ -248,3 +250,15 @@ export NVM_DIR="$HOME/.nvm"
 
 export PATH="$PATH:$HOME/racket/bin"
 
+export ANDROID_HOME=$HOME/Library/Android/sdk
+export PATH=$PATH:$ANDROID_HOME/emulator
+export PATH=$PATH:$ANDROID_HOME/tools
+export PATH=$PATH:$ANDROID_HOME/tools/bin
+export PATH=$PATH:$ANDROID_HOME/platform-tools
+
+alias gh="open \`git remote -v | grep fetch | head -1 | cut -f2 | cut -d' ' -f1 | sed -e's/git@/http:\/\//' -e's/\.git$//' | sed -E 's/(\/\/[^:]*):/\1\//'\`"
+
+function az() {
+  open `git remote get-url origin |
+    perl -pe 's#^git\@ssh\.dev\.azure\.com:v3/(.*)/(.*)$|^https://.*@dev.azure.com/(.*)/_git/(.*)$#https://dev.azure.com/\1\3/_git/\2\4#g'`
+}
