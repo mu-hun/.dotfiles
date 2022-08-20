@@ -63,12 +63,16 @@ Session.vim
 # vscode
 .vscode
 anonymous-cli-metrics.json
+_logs/
+_update-notifier-last-checked
 
 node_modules
 
 build
 
-# yarn 2
+# yarn
 .yarn
+.pnp.cjs
+.pnp.loader.mjs
 
 .eslintcache
