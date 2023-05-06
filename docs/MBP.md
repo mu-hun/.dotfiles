@@ -21,6 +21,12 @@
 - android-platform-tools
 - telegram-desktop discord
 
+### karabiner-elements
+
+```
+ln -sf ~/.dotfiles/.config/karabiner.json ~/.config/karabiner.json
+```
+
 ## `eazy_install`
 
 - trash-cli
