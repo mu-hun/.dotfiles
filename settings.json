@@ -117,9 +117,9 @@
   "materialTheme.accent": "Blue",
   "workbench.startupEditor": "welcomePage",
   "editor.suggest.showStatusBar": true,
-  "workbench.preferredDarkColorTheme": "Material Theme High Contrast",
+  "workbench.preferredDarkColorTheme": "Default Light+ Experimental",
   "workbench.preferredHighContrastColorTheme": "Material Theme High Contrast",
-  "workbench.preferredLightColorTheme": "Material Theme Lighter High Contrast",
+  "workbench.preferredLightColorTheme": "Community Material Theme Darker High Contrast",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
