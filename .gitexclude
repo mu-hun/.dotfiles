@@ -70,9 +70,4 @@ node_modules
 
 build
 
-# yarn
-.yarn
-.pnp.cjs
-.pnp.loader.mjs
-
 .eslintcache
