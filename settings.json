@@ -30,7 +30,7 @@
     "**/__pycache__": true
   },
   "editor.formatOnSave": true,
-  "editor.tabSize": 4,
+  "editor.tabSize": 2,
   "workbench.editor.showTabs": true,
   "csv-preview.theme": "material",
   "workbench.iconTheme": "material-icon-theme",
