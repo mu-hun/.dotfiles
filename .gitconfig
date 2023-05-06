@@ -51,7 +51,7 @@
 	gpgsign = true
 	sshsign = false
 [gpg]
-	program = /usr/local/MacGPG2/bin/gpg2
+	program = /usr/local/MacGPG2/bin/gpg
 [hub]
 	protocol = ssh
 [pull]
