@@ -34,7 +34,7 @@
   "workbench.editor.showTabs": true,
   "csv-preview.theme": "material",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Material Theme Darker High Contrast",
+  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#2979FF",
     "activityBar.activeBorder": "#2979FF",
