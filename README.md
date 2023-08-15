@@ -45,7 +45,8 @@ code --list-extensions >> vs_code_extensions_list.txt
 
 MacOS vscode path is `~/Library/ApplicationSupport/Code/User/`
 
---------
-*dotfiles* was inspired by [simnalamburt/.dotfiles](https://github.com/simnalamburt/.dotfiles).
+---
 
-*dotfiles* is primarily distributed under the terms of the MIT license. See [LICENSE](./LICENSE) for details.
+_dotfiles_ was inspired by [simnalamburt/.dotfiles](https://github.com/simnalamburt/.dotfiles).
+
+_dotfiles_ is primarily distributed under the terms of the MIT license. See [LICENSE](./LICENSE) for details.
