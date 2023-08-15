@@ -12,12 +12,6 @@
   "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
   "terminal.external.osxExec": "iterm.app",
-  "emmet.includeLanguages": {
-    "html": "html",
-    "erb": "erb",
-    "javascrpit": "js",
-    "vue": "html"
-  },
   "typescript.validate.enable": false,
   "files.insertFinalNewline": true,
   "html.format.endWithNewline": true,
@@ -25,16 +19,11 @@
   "editor.insertSpaces": false,
   "vetur.validation.template": false,
   "javascript.validate.enable": false,
-  "editor.fontWeight": "500",
-  "files.exclude": {
-    "**/__pycache__": true
-  },
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
   "workbench.editor.showTabs": true,
   "csv-preview.theme": "material",
   "workbench.iconTheme": "material-icon-theme",
-  "workbench.colorTheme": "Community Material Theme Darker High Contrast",
   "workbench.colorCustomizations": {
     "activityBarBadge.background": "#2979FF",
     "activityBar.activeBorder": "#2979FF",
@@ -117,13 +106,11 @@
   "materialTheme.accent": "Blue",
   "workbench.startupEditor": "welcomePage",
   "editor.suggest.showStatusBar": true,
-  "workbench.preferredDarkColorTheme": "Default Light+ Experimental",
-  "workbench.preferredHighContrastColorTheme": "Material Theme High Contrast",
-  "workbench.preferredLightColorTheme": "Community Material Theme Darker High Contrast",
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
   },
   "markdown-pdf.headerTemplate": "<div style=\"font-size: 9px; margin-left: 1cm; display: none\"> <span class='title'></span></div> <div style=\"font-size: 9px; margin-left: auto; margin-right: 1cm; display: none\"> <span class='date'></span></div>",
   "redhat.telemetry.enabled": false,
-  "diffEditor.ignoreTrimWhitespace": false
+  "editor.accessibilitySupport": "off",
+  "workbench.colorTheme": "GitHub Dark Default"
 }

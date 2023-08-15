@@ -13,6 +13,9 @@ git clone https://github.com/BetaF1sh/.dotfiles.git --depth=1 ~/.dotfiles
 
 ln -sf ~/.dotfiles/.zshrc ~
 
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 mkdir -p ~/.gnupg; ln -sf ~/.dotfiles/gpg-agent.conf ~/.gnupg
 ln -sf ~/.dotfiles/.vimrc ~
 ln -sf ~/.dotfiles/.gitconfig ~
