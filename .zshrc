@@ -1,32 +1,70 @@
 #
-# zplug
+# zinit
 #
-if [[ -f ~/.zplug/init.zsh ]]; then
-	source ~/.zplug/init.zsh
 
-	zplug "simnalamburt/zsh-expand-all"
-	zplug "zsh-users/zsh-completions"
-	zplug "zsh-users/zsh-autosuggestions"
-	zplug "zsh-users/zsh-syntax-highlighting"
-	zplug "zsh-users/zsh-history-substring-search"
+### Added by Zinit's installer
+if [[ ! -f ~/.local/share/zinit/zinit.git/zinit.zsh ]]; then
+    print -P "%F{33} %F{220}Installing %F{33}ZDHARMA-CONTINUUM%F{220} Initiative Plugin Manager (%F{33}zdharma-continuum/zinit%F{220})…%f"
+    command mkdir -p "~/.local/share/zinit" && command chmod g-rwX "~/.local/share/zinit"
+    command git clone https://github.com/zdharma-continuum/zinit "~/.local/share/zinit/zinit.git" && \
+        print -P "%F{33} %F{34}Installation successful.%f%b" || \
+        print -P "%F{160} The clone has failed.%f%b"
+fi
+
+(( ${+_comps} )) && _comps[zinit]=_zinit
+
+autoload -U is-at-least
+if is-at-least 5.1 && [[ -d $HOME/.local/share/zinit/zinit.git ]]; then
+  source ~/.local/share/zinit/zinit.git/zinit.zsh
+	zinit ice depth=1
+
+	# Load starship theme
+	zinit ice as"command" from"gh-r" \
+						atclone"./starship init zsh > init.zsh; ./starship completions zsh > _starship" \
+						atpull"%atclone" src"init.zsh"
+	zinit light starship/starship
+
+	zinit light-mode for \
+			simnalamburt/cgitc \
+			zdharma/fast-syntax-highlighting \
+			agkozak/zsh-z
+
+	# zsh-autosuggestions
+  ZSH_AUTOSUGGEST_USE_ASYNC=1
+  if is-at-least 5.3; then
+    zinit ice silent wait'1' atload'_zsh_autosuggest_start'
+  fi
+	zinit light zsh-users/zsh-autosuggestions
+
+	# zsh-yarn-autocompletions
+	zinit ice atload"zpcdreplay" atclone'./zplug.zsh'
+	zinit light g-plane/zsh-yarn-autocompletions
+
+	# zsh-expand-all
+  ZSH_EXPAND_ALL_DISABLE=word
+  zinit light simnalamburt/zsh-expand-all
+
+	# zsh-history-substring-search
+	zinit light zsh-users/zsh-history-substring-search
 	bindkey '^[[A' history-substring-search-up
 	bindkey '^[[B' history-substring-search-down
-	
-	zplug "g-plane/zsh-yarn-autocompletions", hook-build:"./zplug.zsh", defer:2
-	
-	zplug "mafredri/zsh-async"
-	
-	zplug "simnalamburt/cgitc"
 
-	zplug "iam4x/zsh-iterm-touchbar"
-
-	zplug "agkozak/zsh-z"
-
-	zplug "paulirish/git-open", as:plugin
-	
-	zplug load
+	autoload -Uz compinit bashcompinit
+  compinit
+  bashcompinit
+  zinit cdreplay
 else
-	PS1='%n@%m:%~%(!.#.$) '
+  # Default terminal
+  case "${TERM}" in
+    xterm-color|*-256color)
+      PS1=$'\e[1;32m%n@%m\e[0m:\e[1;34m%~\e[0m%(!.#.$) ';;
+    *)
+      PS1='%n@%m:%~%(!.#.$) ';;
+  esac
+
+  autoload -Uz compinit bashcompinit
+  compinit
+  bashcompinit
 fi
 
 #
@@ -37,6 +75,7 @@ stty stop undef
 alias l='ls -lah'
 alias mv='mv -i'
 alias cp='cp -i'
+alias mkdir='mkdir -p'
 
 setopt auto_cd histignorealldups sharehistory
 zstyle ':completion:*' menu select
@@ -95,14 +134,14 @@ export LC_ALL=en_US.UTF-8
 if [[ -f ~/.fzf.zsh ]]; then source ~/.fzf.zsh; fi
 if [[ "$TMUX" = "" ]]; then export TERM="xterm-256color"; fi
 
-# zsh plugins
-plugins=(
-	git
-)
-
-# ~/.local/bin
+# bin
 if [[ -d ~/.local/bin ]]; then
 	export PATH="$HOME/.local/bin:$PATH"
+fi
+
+# homebrew
+if [[ -d ~/opt/homebrew/bin ]]; then
+	export PATH="/opt/homebrew/bin:$PATH"
 fi
 
 # iTerm2
@@ -118,12 +157,6 @@ if (( $+commands[nvim] )); then
 	alias vi="nvim"
 	alias vimdiff="nvim -d"
 fi
-
-# Path to your oh-my-zsh installation.
-export ZSH="$HOME/.oh-my-zsh"
-
-# oh-my-zsh
-source $ZSH/oh-my-zsh.sh
 
 # Golang
 if (( $+commands[go] )) && [[ -d ~/go ]]; then
@@ -178,6 +211,8 @@ fi
 if (( $+commands[npx] )); then
 	alias npm='npx npm'
 fi
+
+
 
 if (( $+commands[fzf-tmux] )); then
 	# fe [FUZZY PATTERN] - Open the selected file with the default editor
@@ -236,29 +271,3 @@ if (( $+commands[fzf-tmux] )); then
 		print -z $( ([ -n "$ZSH_NAME" ] && fc -l 1 || history) | fzf +s --tac | sed 's/ *[0-9]* *//')
 	}
 fi
-
-#
-# pure
-#
-autoload -U promptinit; promptinit
-prompt pure
-export PATH="/usr/local/sbin:$PATH"
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-export PATH="$PATH:$HOME/racket/bin"
-
-export ANDROID_HOME=$HOME/Library/Android/sdk
-export PATH=$PATH:$ANDROID_HOME/emulator
-export PATH=$PATH:$ANDROID_HOME/tools
-export PATH=$PATH:$ANDROID_HOME/tools/bin
-export PATH=$PATH:$ANDROID_HOME/platform-tools
-
-alias gh="open \`git remote -v | grep fetch | head -1 | cut -f2 | cut -d' ' -f1 | sed -e's/git@/http:\/\//' -e's/\.git$//' | sed -E 's/(\/\/[^:]*):/\1\//'\`"
-
-function az() {
-  open `git remote get-url origin |
-    perl -pe 's#^git\@ssh\.dev\.azure\.com:v3/(.*)/(.*)$|^https://.*@dev.azure.com/(.*)/_git/(.*)$#https://dev.azure.com/\1\3/_git/\2\4#g'`
-}
