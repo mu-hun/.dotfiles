@@ -3,7 +3,7 @@
     <img alt="dotfiles" src="./logo.png">
   </a>
   <br>
-  <a href="docs/FireFox.md">FireFox</a> | <a href="docs/MBP.md">MacOS</a>
+  <a href="macOS">macOS</a>
 </p>
 
 Requires `git` and `zsh`
