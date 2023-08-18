@@ -6,7 +6,7 @@
 
 ## [`brew`](https://brew.sh)
 
-- tmux fzf hub gh yarn neovim node hugo
+- tmux fzf hub gh yarn neovim node hugo ffmpeg
 
 ## [`brew cask`](https://caskroom.github.io/)
 
