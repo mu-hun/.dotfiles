@@ -21,6 +21,12 @@ brew tap homebrew/cask-versions
 - pdf-expert muse
 - telegram-desktop discord
 
+### karabiner-elements
+
+```
+ln -sf ~/.dotfiles/macOS/karabiner.json ~/.config/karabiner/karabiner.json
+```
+
 ### iterm2
 
 ```
