@@ -1,5 +1,5 @@
 <p align=center>
-  <a href="https://github.com/BetaF1sh">
+  <a href="https://github.com/x86chi">
     <img alt="dotfiles" src="./logo.png">
   </a>
   <br>
@@ -9,7 +9,7 @@
 Requires `git` and `zsh`
 
 ```bash
-git clone https://github.com/BetaF1sh/.dotfiles.git --depth=1 ~/.dotfiles
+git clone https://github.com/x86chi/.dotfiles.git --depth=1 ~/.dotfiles
 
 ln -sf ~/.dotfiles/.zshrc ~
 
