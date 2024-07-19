@@ -9,7 +9,6 @@
   "editor.wordWrap": "on",
   "editor.minimap.enabled": false,
   "editor.bracketPairColorization.enabled": true,
-  "workbench.activityBar.visible": true,
   "workbench.statusBar.visible": true,
   "terminal.external.osxExec": "iterm.app",
   "typescript.validate.enable": false,
@@ -21,7 +20,7 @@
   "javascript.validate.enable": false,
   "editor.formatOnSave": true,
   "editor.tabSize": 2,
-  "workbench.editor.showTabs": true,
+  "workbench.editor.showTabs": "multiple",
   "csv-preview.theme": "material",
   "workbench.iconTheme": "material-icon-theme",
   "workbench.colorCustomizations": {
@@ -100,7 +99,7 @@
   },
   "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": true
+    "source.fixAll.eslint": "explicit"
   },
   "python.languageServer": "Pylance",
   "materialTheme.accent": "Blue",
