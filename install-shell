@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+# install oh-my-zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
+mkdir -p ~/.gnupg; ln -sf ~/.dotfiles/gpg-agent.conf ~/.gnupg
+ln -sf ~/.dotfiles/.zshrc ~
+ln -sf ~/.dotfiles/.vimrc ~
+ln -sf ~/.dotfiles/.gitconfig ~
+ln -sf ~/.dotfiles/.gitexclude ~
+
+# zinit
+bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
+
+# Optional dotfiles
+cp ~/.dotfiles/.gitconfig.local ~
+
+# neovim
+ln -sf ~/.dotfiles/init.vim ~/.config/nvim

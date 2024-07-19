@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+git clone https://github.com/x86chi/.dotfiles.git --depth=1 ~/.dotfiles
+
+source ./install-shell
+source ./macOS/install-macos
