@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+source ~/.dotfiles/macOS/system.bash
+
+touch ~/.huslogin
+
+source ~/.dotfiles/macOS/brew.bash
+source ~/.dotfiles/macOS/apps/iterm.bash
+
+source ./vscode/init
+
+sudo shutdown -r now
