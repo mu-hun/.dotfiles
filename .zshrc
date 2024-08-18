@@ -140,7 +140,7 @@ if [[ -d ~/.local/bin ]]; then
 fi
 
 # homebrew
-if [[ -d ~/opt/homebrew ]]; then
+if [[ -d /opt/homebrew ]]; then
 	export PATH="/opt/homebrew/bin:$PATH"
 	export PATH="/opt/homebrew/sbin:$PATH"
 fi
