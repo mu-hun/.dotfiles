@@ -111,5 +111,8 @@
   "markdown-pdf.headerTemplate": "<div style=\"font-size: 9px; margin-left: 1cm; display: none\"> <span class='title'></span></div> <div style=\"font-size: 9px; margin-left: auto; margin-right: 1cm; display: none\"> <span class='date'></span></div>",
   "redhat.telemetry.enabled": false,
   "editor.accessibilitySupport": "off",
-  "workbench.colorTheme": "GitHub Dark Default"
+  "workbench.colorTheme": "GitHub Dark Default",
+  "cph.general.defaultLanguage": "python",
+  "cph.general.defaultLanguageTemplateFileLocation": "/users/muhun/template.py",
+  "cph.general.useShortCodeForcesName": true
 }
