@@ -62,6 +62,7 @@
 	forceSignAnnotated = true
 [alias]
 	lg = log --graph --abbrev-commit --decorate --date=relative --format=format:'%C(bold red)%h%C(reset) : %C(bold green)(%ar)%C(reset) - %C(cyan)<%an>%C(reset)%C(bold yellow)%d%C(reset)%n%n%w(90,1,2)%C(white)%B%C(reset)%n'
+	browse = "!f() { open $(git config remote.${1:-origin}.url | sed -E 's/:([^\\/])/\\/\\1/g' | sed -e 's/ssh:\\/\\///g' | sed -e 's/git@/https:\\/\\//g' | sed -e 's/\\.git$//g'); }; f"
 [web]
 	browser = firefox
 
