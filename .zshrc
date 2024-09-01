@@ -151,6 +151,11 @@ if [[ -f ~/.iterm2_shell_integration.zsh ]] then
 	source ~/.iterm2_shell_integration.zsh
 fi
 
+# git
+if (( $+commands[git] )); then
+	alias gw="git browse"
+fi
+
 # Neovim
 if (( $+commands[nvim] )); then
 	export EDITOR=nvim
@@ -185,6 +190,7 @@ fi
 # thefuck
 if (( $+commands[thefuck] )); then
 	eval $(thefuck --alias)
+	alias f="fuck"
 fi
 
 # pip3
