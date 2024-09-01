@@ -178,11 +178,6 @@ if (( $+commands[yarn] )); then
 	export PATH="$(yarn global bin):$PATH"	
 fi
 
-# hub
-if (( $+commands[hub] )); then
-	alias git='hub'
-fi
-
 if (( $+commands[processing-java] )); then
 	export PROCESSING_JAVA="/usr/local/bin/processing-java"
 fi
