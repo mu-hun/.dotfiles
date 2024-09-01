@@ -1,7 +1,0 @@
-# !/usr/bin/env bash
-
-# apply vscode configuare
-ln -sf ~/.dotfiles/vscode/settings.json ~/Library/Application\ Support/Code/User/
-
-## install vscode extensions
-cat ~/.dotfiles/vscode/extensions_list.txt | xargs -n 1 code --install-extension
