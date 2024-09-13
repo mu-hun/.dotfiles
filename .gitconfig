@@ -66,5 +66,18 @@
 [web]
 	browser = firefox
 
+[diff]
+  tool = difftastic
+	external = difft
+
+[difftool]
+  prompt = false
+
+[difftool "difftastic"]
+  cmd = difft "$LOCAL" "$REMOTE"
+
+[pager]
+  difftool = true
+
 [diff "plist"]
-    textconv = defaults read
+  textconv = defaults read
