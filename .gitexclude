@@ -5,6 +5,7 @@ npm-debug.log     # npm
 __pycache__       # Python cache
 _cacache
 _logs             # pnpm
+.env.local        # dotenv
 
 # Python packages
 *.egg-info
