@@ -4,6 +4,7 @@ Plug 'leafgarland/typescript-vim'
 Plug 'peitalin/vim-jsx-typescript'
 
 Plug 'easymotion/vim-easymotion'
+Plug 'seandewar/bad-apple.nvim'
 
 call plug#end()
 
