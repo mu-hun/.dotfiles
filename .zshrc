@@ -198,6 +198,11 @@ if (( $+commands[pip3] )); then
 	alias pip='pip3'
 fi
 
+# pipenv
+if (( $+commands[pipenv] )); then
+	export PIPENV_VENV_IN_PROJECT=1
+fi
+
 if (( $+commands[fzf] )); then
 	function fzfpw() {
 		fzf --preview '[[ $(file --mime {}) =~ binary ]] &&

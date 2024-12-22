@@ -15,6 +15,7 @@ dist
 # pipenv
 __pycache__
 .xmark.*.html     # Xmark
+.venv
 
 # pytest
 .pytest_cache
