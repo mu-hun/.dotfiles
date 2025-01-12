@@ -1,20 +1,10 @@
 set encoding=utf-8
 set fileencoding=utf-8
-set diffopt+=iwhite,vertical
-set pastetoggle=<F8>
-set scrolloff=3
-set switchbuf+=usetab,split
-set startofline
-set splitbelow
 set lazyredraw
 set nobackup
 if !has('nvim') && &compatible
   set nocompatible
 endif
-set nofoldenable
-set noshowmode
-set noswapfile
-set nowrap
 
 " History
 if has("persistent_undo")
@@ -32,11 +22,6 @@ endif
 set cindent
 set autoindent
 set smartindent
-
-" Tab
-set softtabstop=4
-set shiftwidth=4
-set noexpandtab
 
 " Searching
 set incsearch
