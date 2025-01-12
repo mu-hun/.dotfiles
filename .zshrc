@@ -36,10 +36,6 @@ if is-at-least 5.1 && [[ -d $HOME/.local/share/zinit/zinit.git ]]; then
   fi
 	zinit light zsh-users/zsh-autosuggestions
 
-	# zsh-yarn-autocompletions
-	zinit ice atload"zpcdreplay" atclone'./zplug.zsh'
-	zinit light g-plane/zsh-yarn-autocompletions
-
 	# zsh-expand-all
   ZSH_EXPAND_ALL_DISABLE=word
   zinit light simnalamburt/zsh-expand-all
