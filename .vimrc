@@ -75,3 +75,5 @@ autocmd Filetype gitcommit setlocal spell textwidth=72
 cabbrev ㅈ w
 cabbrev ㅂ q
 cabbrev ㅈㅂ wq
+
+set langmap=ㅁa,ㅠb,ㅊc,ㅇd,ㄷe,ㄹf,ㅎg,ㅗh,ㅑi,ㅓj,ㅏk,ㅣl,ㅡm,ㅜn,ㅐo,ㅔp,ㅂq,ㄱr,ㄴs,ㅅt,ㅕu,ㅍv,ㅈw,ㅌx,ㅛy,ㅋz
