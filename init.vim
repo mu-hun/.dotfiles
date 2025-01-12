@@ -1,3 +1,7 @@
+set runtimepath+=~/.vim,~/.vim/after
+set packpath+=~/.vim
+source ~/.vimrc
+
 call plug#begin('~/.vim/plugged')
 
 Plug 'leafgarland/typescript-vim'
@@ -47,4 +51,3 @@ nmap <c-s>/ <Plug>(easymotion-sn)
 " Smartsign (type `3` and match `3`&`#`)
 let g:EasyMotion_smartcase = 1
 let g:EasyMotion_use_smartsign_us = 1
-
