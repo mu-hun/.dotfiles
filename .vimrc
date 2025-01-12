@@ -72,8 +72,8 @@ nnoremap <CR> :call CustomEnter()<CR>
 autocmd Filetype gitcommit setlocal spell textwidth=72
 
 " Easy file save without switching IME
-cabbrev ㅈ w
-cabbrev ㅂ q
-cabbrev ㅈㅂ wq
+ca ㅈ w
+ca ㅂ q
+ca ㅈㅂ wq
 
 set langmap=ㅁa,ㅠb,ㅊc,ㅇd,ㄷe,ㄹf,ㅎg,ㅗh,ㅑi,ㅓj,ㅏk,ㅣl,ㅡm,ㅜn,ㅐo,ㅔp,ㅂq,ㄱr,ㄴs,ㅅt,ㅕu,ㅍv,ㅈw,ㅌx,ㅛy,ㅋz
