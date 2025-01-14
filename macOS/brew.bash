@@ -9,3 +9,4 @@ corepack enable && corepack install --global pnpm
 
 ln -sf ~/.dotfiles/macOS/karabiner.json ~/.config/karabiner
 
+ln -sf ~/.dotfiles/macOS/ghostty/config ~/Library/Application\ Support/com.mitchellh.ghostty
