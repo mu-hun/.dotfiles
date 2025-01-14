@@ -62,3 +62,9 @@ ca ㅂ q
 ca ㅈㅂ wq
 
 set langmap=ㅁa,ㅠb,ㅊc,ㅇd,ㄷe,ㄹf,ㅎg,ㅗh,ㅑi,ㅓj,ㅏk,ㅣl,ㅡm,ㅜn,ㅐo,ㅔp,ㅂq,ㄱr,ㄴs,ㅅt,ㅕu,ㅍv,ㅈw,ㅌx,ㅛy,ㅋz
+
+" navigation 기능 보완 ---------------------------------
+nnoremap <Space>h ^
+nnoremap <Space>l $
+noremap <Space>j G
+noremap <Space>k gg
