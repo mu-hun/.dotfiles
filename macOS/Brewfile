@@ -34,7 +34,6 @@ brew "pillow"
 brew "pipenv"
 brew "pipx"
 brew "pkgconf"
-brew "pnpm", link: false
 brew "python-tk@3.12"
 brew "python@3.11"
 brew "thefuck"
