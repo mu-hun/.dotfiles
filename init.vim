@@ -10,8 +10,13 @@ Plug 'peitalin/vim-jsx-typescript'
 Plug 'easymotion/vim-easymotion'
 Plug 'seandewar/bad-apple.nvim'
 
+Plug 'lewis6991/gitsigns.nvim'
+
 call plug#end()
 
+lua <<EOF
+require('gitsigns').setup()
+EOF
 
 " Easy motion
 " Source from: https://github.com/johngrib/dotfiles/blob/ff80f0ea1b63f38e71d66a58af2b1068f0ba0ca9/nvim/vim-include/set-easymotion.vim
