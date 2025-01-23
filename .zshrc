@@ -279,3 +279,7 @@ fi
 if (( $+commands[fnm] )); then
 	eval "`fnm env`"
 fi
+
+if [[ -d ~/.spicetify ]]; then
+	export PATH=$PATH:~/.spicetify
+fi
