@@ -88,3 +88,5 @@
 
 [gpg "ssh"]
 	allowedSignersFile = ~/.ssh/allowed_signers
+	program = ssh-keygen
+
