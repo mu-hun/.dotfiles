@@ -34,6 +34,8 @@
 [merge]
 	tool = vimdiff
 	conflictstyle = diff3
+[rebase]
+	autosquash = true
 [credential "https://github.com"]
 	username = x86chi
 [filter "lfs"]
