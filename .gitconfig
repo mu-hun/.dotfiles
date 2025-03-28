@@ -37,7 +37,7 @@
 [rebase]
 	autosquash = true
 [credential "https://github.com"]
-	username = x86chi
+	username = mu-hun
 [filter "lfs"]
 	required = yes
 	clean = git-lfs clean -- %f
