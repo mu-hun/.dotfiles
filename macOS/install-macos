@@ -7,6 +7,6 @@ source ~/.dotfiles/macOS/brew.bash
 
 source ./vscode/init
 
-cd ~/.dotfiles/macOS/wallpaper && pipenv install && crontab crontab -u
+crontab ~/.dotfiles/macOS/wallpaper/crontab -u
 
 sudo shutdown -r now
