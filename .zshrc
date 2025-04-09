@@ -141,12 +141,6 @@ if [[ -d /opt/homebrew ]]; then
 	export PATH="/opt/homebrew/sbin:$PATH"
 fi
 
-# iTerm2
-
-if [[ -f ~/.iterm2_shell_integration.zsh ]] then
-	source ~/.iterm2_shell_integration.zsh
-fi
-
 # git
 if (( $+commands[git] )); then
 	alias gw="git browse"
