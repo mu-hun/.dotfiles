@@ -1,4 +1,3 @@
-tap "homebrew/bundle"
 tap "majd/repo"
 brew "jpeg-turbo"
 brew "libpng"
