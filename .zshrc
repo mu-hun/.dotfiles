@@ -287,11 +287,6 @@ if [[ -d ~/.spicetify ]]; then
 	export PATH=$PATH:~/.spicetify
 fi
 
-
-if [[ -d /Applications/Tailscale.app ]]; then
-	alias tailscale='/Applications/Tailscale.app/Contents/MacOS/Tailscale'
-fi
-
 if [[ -d ~/.sdkman ]] then
 	#THIS MUST BE AT THE END OF THE FILE FOR SDKMAN TO WORK!!!
 	export SDKMAN_DIR="$HOME/.sdkman"
