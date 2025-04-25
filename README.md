@@ -1,5 +1,5 @@
 <p align=center>
-  <a href="https://github.com/x86chi">
+  <a href="https://github.com/mu-hun">
     <img alt="dotfiles" src="./logo.png">
   </a>
   <br>
