@@ -103,7 +103,7 @@
   },
   "python.languageServer": "Pylance",
   "materialTheme.accent": "Blue",
-  "workbench.startupEditor": "welcomePage",
+  "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "editor.suggest.showStatusBar": true,
   "[javascriptreact]": {
     "editor.defaultFormatter": "esbenp.prettier-vscode"
