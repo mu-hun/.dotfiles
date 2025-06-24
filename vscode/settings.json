@@ -114,5 +114,17 @@
   "workbench.colorTheme": "GitHub Dark Default",
   "cph.general.defaultLanguage": "python",
   "cph.general.defaultLanguageTemplateFileLocation": "~/.dotfiles/vscode/template.py",
-  "cph.general.useShortCodeForcesName": true
+  "cph.general.useShortCodeForcesName": true,
+  "focus.highlightRange": "block",
+  "svelte.enable-ts-plugin": true,
+  "[postcss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[svelte]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "github.copilot.enable": {
+    "*": true,
+    "plaintext": false
+  }
 }
