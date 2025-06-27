@@ -177,11 +177,6 @@ if (( $+commands[ruby] )) && (( $+commands[gem] )); then
 	export PATH="$PATH:$GEM_HOME/bin"
 fi
 
-# yarn global
-if (( $+commands[yarn] )); then
-	export PATH="$(yarn global bin):$PATH"	
-fi
-
 if (( $+commands[processing-java] )); then
 	export PROCESSING_JAVA="/usr/local/bin/processing-java"
 fi
@@ -302,3 +297,4 @@ if (( $+commands[pnpm] )); then
 	esac
 fi
 # pnpm end
+if [ -d "$HOME/.cargo/bin" ]; then export PATH="$HOME/.cargo/bin:$PATH"; fi
