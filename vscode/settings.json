@@ -126,5 +126,9 @@
   "github.copilot.enable": {
     "*": true,
     "plaintext": false
-  }
+  },
+  "javascript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterNames.enabled": "all",
+  "typescript.inlayHints.parameterTypes.enabled": true,
+  "python.analysis.inlayHints.callArgumentNames": "all"
 }
