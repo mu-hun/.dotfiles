@@ -127,6 +127,14 @@
     "*": true,
     "plaintext": false
   },
+  "diffEditor": {
+    "codeLens": true,
+    "hideUnchangedRegions.enabled": true,
+    "experimental": {
+      "showMoves": true,
+      "useTrueInlineView": true
+    }
+  },
   "errorLens.codeLensEnabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
