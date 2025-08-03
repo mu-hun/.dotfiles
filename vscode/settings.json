@@ -127,6 +127,7 @@
     "*": true,
     "plaintext": false
   },
+  "errorLens.codeLensEnabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterTypes.enabled": true,
