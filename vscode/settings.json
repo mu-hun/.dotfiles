@@ -14,8 +14,11 @@
   "typescript.validate.enable": false,
   "files.insertFinalNewline": true,
   "html.format.endWithNewline": true,
-  "editor.detectIndentation": false,
-  "editor.insertSpaces": false,
+  "editor": {
+    "detectIndentation": false,
+    "insertSpaces": false,
+    "defaultFormatter": "esbenp.prettier-vscode"
+  },
   "vetur.validation.template": false,
   "javascript.validate.enable": false,
   "editor.formatOnSave": true,
@@ -50,12 +53,14 @@
   },
   "material-icon-theme.activeIconPack": "react",
   "[markdown]": {
-    "editor.quickSuggestions": {
-      "comments": "on",
-      "strings": "on",
-      "other": "on"
-    },
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
+    "editor": {
+      "wordWrap": "on",
+      "quickSuggestions": {
+        "comments": "on",
+        "strings": "on",
+        "other": "on"
+      }
+    }
   },
   "terminal.integrated.rendererType": "dom",
   "live2d.bottom": -50,
@@ -74,29 +79,8 @@
   "markdown-preview-enhanced.codeBlockTheme": "github.css",
   "markdown-preview-enhanced.previewTheme": "atom-dark.css",
   "sync.gist": "8a623dc83259ef71f0d67dad906cf88f",
-  "[typescript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[typescriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[scss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[javascript]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[jsonc]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[html]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "prettier.semi": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "[json]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "editor.formatOnPaste": true,
   "editor.codeActionsOnSave": {
     "source.fixAll.eslint": "explicit"
@@ -105,9 +89,6 @@
   "materialTheme.accent": "Blue",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
   "editor.suggest.showStatusBar": true,
-  "[javascriptreact]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "markdown-pdf.headerTemplate": "<div style=\"font-size: 9px; margin-left: 1cm; display: none\"> <span class='title'></span></div> <div style=\"font-size: 9px; margin-left: auto; margin-right: 1cm; display: none\"> <span class='date'></span></div>",
   "redhat.telemetry.enabled": false,
   "editor.accessibilitySupport": "off",
@@ -117,12 +98,6 @@
   "cph.general.useShortCodeForcesName": true,
   "focus.highlightRange": "block",
   "svelte.enable-ts-plugin": true,
-  "[postcss]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "[svelte]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
   "github.copilot.enable": {
     "*": true,
     "plaintext": false
@@ -139,5 +114,9 @@
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterTypes.enabled": true,
-  "python.analysis.inlayHints.callArgumentNames": "all"
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "[css]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "prettier.printWidth": 120
 }
