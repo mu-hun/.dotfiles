@@ -27,7 +27,8 @@ if is-at-least 5.1 && [[ -d $HOME/.local/share/zinit/zinit.git ]]; then
 	zinit light-mode for \
 			simnalamburt/cgitc \
 			zdharma/fast-syntax-highlighting \
-			agkozak/zsh-z
+			agkozak/zsh-z \
+			gomjellie/zsh-hangul
 
 	# Load a few important annexes, without Turbo
 	# (this is currently required for annexes)
