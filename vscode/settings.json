@@ -1,28 +1,34 @@
 {
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
-  "editor.fontFamily": "Fira Code",
-  "editor.fontLigatures": true,
   "window.zoomLevel": 2,
   "files.autoSave": "onWindowChange",
   "files.autoSaveDelay": 100,
-  "editor.wordWrap": "on",
-  "editor.minimap.enabled": false,
-  "editor.bracketPairColorization.enabled": true,
   "workbench.statusBar.visible": true,
   "terminal.external.osxExec": "iterm.app",
   "typescript.validate.enable": false,
   "files.insertFinalNewline": true,
   "html.format.endWithNewline": true,
   "editor": {
+    "bracketPairColorization.enabled": true,
+    "defaultFormatter": "esbenp.prettier-vscode",
     "detectIndentation": false,
+    "fontFamily": "Fira Code",
+    "fontLigatures": true,
+    "formatOnPaste": true,
+    "formatOnSave": true,
     "insertSpaces": false,
-    "defaultFormatter": "esbenp.prettier-vscode"
+    "minimap.enabled": false,
+    "multiCursorModifier": "ctrlCmd",
+    "tabSize": 2,
+    "wordWrap": "on",
+    "codeActionsOnSave": {
+      "source.fixAll.eslint": "explicit"
+    },
+    "suggest.showStatusBar": true
   },
   "vetur.validation.template": false,
   "javascript.validate.enable": false,
-  "editor.formatOnSave": true,
-  "editor.tabSize": 2,
   "workbench.editor.showTabs": "multiple",
   "csv-preview.theme": "material",
   "workbench.iconTheme": "material-icon-theme",
@@ -54,7 +60,6 @@
   "material-icon-theme.activeIconPack": "react",
   "[markdown]": {
     "editor": {
-      "wordWrap": "on",
       "quickSuggestions": {
         "comments": "on",
         "strings": "on",
@@ -70,7 +75,6 @@
   "live2d.right": -70,
   "javascript.updateImportsOnFileMove.enabled": "always",
   "git.autofetch": true,
-  "editor.multiCursorModifier": "ctrlCmd",
   "prettier.trailingComma": "es5",
   "prettier.useTabs": false,
   "prettier.singleQuote": true,
@@ -81,17 +85,11 @@
   "sync.gist": "8a623dc83259ef71f0d67dad906cf88f",
   "prettier.semi": false,
   "typescript.updateImportsOnFileMove.enabled": "always",
-  "editor.formatOnPaste": true,
-  "editor.codeActionsOnSave": {
-    "source.fixAll.eslint": "explicit"
-  },
   "python.languageServer": "Pylance",
   "materialTheme.accent": "Blue",
   "workbench.startupEditor": "welcomePageInEmptyWorkbench",
-  "editor.suggest.showStatusBar": true,
   "markdown-pdf.headerTemplate": "<div style=\"font-size: 9px; margin-left: 1cm; display: none\"> <span class='title'></span></div> <div style=\"font-size: 9px; margin-left: auto; margin-right: 1cm; display: none\"> <span class='date'></span></div>",
   "redhat.telemetry.enabled": false,
-  "editor.accessibilitySupport": "off",
   "workbench.colorTheme": "GitHub Dark Default",
   "cph.general.defaultLanguage": "python",
   "cph.general.defaultLanguageTemplateFileLocation": "~/.dotfiles/vscode/template.py",
@@ -114,9 +112,5 @@
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterTypes.enabled": true,
-  "python.analysis.inlayHints.callArgumentNames": "all",
-  "[css]": {
-    "editor.defaultFormatter": "esbenp.prettier-vscode"
-  },
-  "prettier.printWidth": 120
+  "python.analysis.inlayHints.callArgumentNames": "all"
 }
