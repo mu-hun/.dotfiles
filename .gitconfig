@@ -1,7 +1,7 @@
 [user]
 	name = Mu-Hun
 	email = iam@muhun.kim
-	signingkey = ~/.ssh/id_ed25519.pub
+	signingkey = A2876CED
 [core]
 	editor = nvim
 	pager = less -+XF -SQc
@@ -52,10 +52,10 @@
 	# g = "log --graph --pretty='format:%C(auto)%h%d %s%x1b[38;5;022m% GS%x1b[0m'"
 	# h = "log --patch --find-renames --stat --follow"
 [commit]
-	sshsign = true
 	gpgsign = true
 [gpg]
-	format = ssh
+	# format = openpgp
+	program = /usr/local/bin/gpg
 [hub]
 	protocol = ssh
 [pull]
@@ -86,8 +86,4 @@
 
 [diff "plist"]
 	textconv = defaults read
-
-[gpg "ssh"]
-	allowedSignersFile = ~/.ssh/allowed_signers
-	program = ssh-keygen
 
