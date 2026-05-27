@@ -18,6 +18,14 @@ Download [`GitHub Dark Default.itermcolors`](https://raw.githubusercontent.com/c
 - alfred
 - [GPG Suite](https://gpgtools.org/)
 
+## Colima (Docker runtime)
+
+Auto-start Colima at login via LaunchAgent. Handled by `install-macos` automatically.
+
+Starts with: `--cpu 1 --memory 2 --vm-type vz`
+
+Logs: `/tmp/colima.startup.log`, `/tmp/colima.startup.err`
+
 ## Enable AAC and aptX Audio Codecs
 
 1. Go to [apple developer page](https://developer.apple.com/download/more/) and download 'Hardware IO Tools for Xcode'

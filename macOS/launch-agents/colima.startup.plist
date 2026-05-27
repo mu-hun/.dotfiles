@@ -1,0 +1,26 @@
+<!--
+Source - https://stackoverflow.com/a/21680529
+Posted by Dmitriy, modified by community. See post 'Timeline' for change history
+Retrieved 2026-05-27, License - CC BY-SA 4.0
+-->
+
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Label</key>
+    <string>colima.startup</string>
+    <key>ProgramArguments</key>
+    <array>
+        <string>/bin/zsh</string>
+        <string>-c</string>
+        <string>/opt/homebrew/bin/colima start --cpu 1 --memory 2 --vm-type vz</string>
+    </array>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>StandardOutPath</key>
+    <string>/tmp/colima.startup.log</string>
+    <key>StandardErrorPath</key>
+    <string>/tmp/colima.startup.err</string>
+</dict>
+</plist>
