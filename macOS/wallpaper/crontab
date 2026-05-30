@@ -1,1 +1,0 @@
-0 * * * * python3 ~/.dotfiles/macOS/wallpaper/update-color-based-on-hour.py

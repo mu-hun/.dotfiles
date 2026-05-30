@@ -23,9 +23,9 @@
     "tabSize": 2,
     "wordWrap": "on",
     "codeActionsOnSave": {
-      "source.fixAll.eslint": "explicit"
+      "source.fixAll.eslint": "explicit",
     },
-    "suggest.showStatusBar": true
+    "suggest.showStatusBar": true,
   },
   "vetur.validation.template": false,
   "javascript.validate.enable": false,
@@ -55,7 +55,7 @@
     "menubar.selectionForeground": "#2979FF",
     "editor.findMatchBorder": "#2979FF",
     "selection.background": "#2979FF40",
-    "statusBarItem.remoteBackground": "#2979FF"
+    "statusBarItem.remoteBackground": "#2979FF",
   },
   "material-icon-theme.activeIconPack": "react",
   "[markdown]": {
@@ -63,9 +63,9 @@
       "quickSuggestions": {
         "comments": "on",
         "strings": "on",
-        "other": "on"
-      }
-    }
+        "other": "on",
+      },
+    },
   },
   "terminal.integrated.rendererType": "dom",
   "live2d.bottom": -50,
@@ -98,19 +98,20 @@
   "svelte.enable-ts-plugin": true,
   "github.copilot.enable": {
     "*": true,
-    "plaintext": false
+    "plaintext": false,
   },
   "diffEditor": {
     "codeLens": true,
     "hideUnchangedRegions.enabled": true,
     "experimental": {
       "showMoves": true,
-      "useTrueInlineView": true
-    }
+      "useTrueInlineView": true,
+    },
   },
   "errorLens.codeLensEnabled": true,
   "javascript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterNames.enabled": "all",
   "typescript.inlayHints.parameterTypes.enabled": true,
-  "python.analysis.inlayHints.callArgumentNames": "all"
+  "python.analysis.inlayHints.callArgumentNames": "all",
+  "claudeCode.preferredLocation": "panel",
 }

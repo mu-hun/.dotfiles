@@ -50,7 +50,7 @@
 # 12: Notification Center
 # 13: Lock Screen
 # Top left screen corner
-defaults write com.apple.dock wvous-tl-corner -int 10
+defaults write com.apple.dock wvous-tl-corner -int 2
 defaults write com.apple.dock wvous-tl-modifier -int 0
 # Top right screen corner
 defaults write com.apple.dock wvous-tr-corner -int 12
