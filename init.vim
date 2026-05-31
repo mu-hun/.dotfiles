@@ -1,6 +1,6 @@
 set runtimepath+=~/.vim,~/.vim/after
 set packpath+=~/.vim
-source ~/.vimrc
+silent! source ~/.vimrc
 
 call plug#begin('~/.vim/plugged')
 
@@ -15,7 +15,8 @@ Plug 'lewis6991/gitsigns.nvim'
 call plug#end()
 
 lua <<EOF
-require('gitsigns').setup()
+local ok, gitsigns = pcall(require, 'gitsigns')
+if ok then gitsigns.setup() end
 EOF
 
 " Easy motion
