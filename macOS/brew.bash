@@ -7,4 +7,5 @@ brew bundle --file ~/Brewfile
 
 ln -sf ~/.dotfiles/macOS/karabiner.json ~/.config/karabiner
 
-ln -sf ~/.dotfiles/macOS/ghostty/config ~/.config/ghostty
+mkdir -p ~/.config/ghostty
+ln -sf ~/.dotfiles/macOS/ghostty/config ~/.config/ghostty/config
