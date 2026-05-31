@@ -20,6 +20,7 @@ system_preferences=(
   trackpad
 	input
 	finder
+	screenshots
 )
 
 # Sources all the preference files

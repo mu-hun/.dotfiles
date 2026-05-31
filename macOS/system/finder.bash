@@ -24,6 +24,9 @@ defaults write com.apple.finder ShowRemovableMediaOnDesktop -bool true
 # show all filename extensions
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 
+# Remove the delay when hovering the toolbar title
+defaults write NSGlobalDomain "NSToolbarTitleViewRolloverDelay" -float "0"
+
 # show status bar
 defaults write com.apple.finder ShowStatusBar -bool true
 
