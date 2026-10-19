@@ -9,6 +9,14 @@ ln -sf ~/.dotfiles/.vimrc ~
 ln -sf ~/.dotfiles/.gitconfig ~
 ln -sf ~/.dotfiles/.gitexclude ~
 
+mkdir -p ~/.local/bin
+for f in ~/.dotfiles/bin/*; do
+    ln -sf "$f" ~/.local/bin/
+done
+
+mkdir -p ~/github.com/AdguardTeam
+ln -sf ~/.dotfiles/ADGUARD_FILTERS_PR_TEMPLATE.md ~/github.com/AdguardTeam/ADGUARD_FILTERS_PR_TEMPLATE.md
+
 # zinit
 bash -c "$(curl --fail --show-error --silent --location https://raw.githubusercontent.com/zdharma-continuum/zinit/HEAD/scripts/install.sh)"
 

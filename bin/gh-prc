@@ -1,0 +1,39 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+TEMPLATE="$HOME/github.com/AdguardTeam/ADGUARD_FILTERS_PR_TEMPLATE.md"
+BODY_FILE="$(mktemp)"
+trap 'rm -f "$BODY_FILE"' EXIT
+
+branch="$(git rev-parse --abbrev-ref HEAD)"
+if [[ "$branch" =~ ^(Fix|Upd)-\#([0-9]+) ]]; then
+    issue_ref="${BASH_REMATCH[1]} #${BASH_REMATCH[2]}"
+else
+    echo "gh-prc: could not find Fix/Upd-#NUMBER in branch name '$branch'" >&2
+    exit 1
+fi
+
+sed "s|<!-- issue number -->|${issue_ref}|" "$TEMPLATE" > "$BODY_FILE"
+
+categories=(
+    "Missed ads or ad leftovers"
+    "doesn't work properly"
+    "gets detected on a website"
+    "Missed analytics or tracker"
+    "Social media buttons"
+    "Annoyances"
+    "Filters maintenance"
+)
+
+echo "Pick a category:" >&2
+select category in "${categories[@]}"; do
+    if [[ -n "$category" ]]; then
+        break
+    fi
+done < /dev/tty
+
+sed -i '' "/${category}/ s/- \[ \]/- [x]/" "$BODY_FILE"
+
+git push -u origin "$branch"
+
+gh pr create --fill --body-file "$BODY_FILE" --assignee "@me" --reviewer "AdguardTeam/filters-maintainers"
